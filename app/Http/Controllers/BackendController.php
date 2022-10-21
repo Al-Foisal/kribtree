@@ -12,6 +12,7 @@ use App\Models\Home;
 use App\Models\Contact;
 use App\Models\SocialSite;
 use App\Models\Agent;
+use App\Models\Subscribtion;
 
 class BackendController extends Controller {
    
@@ -212,4 +213,9 @@ class BackendController extends Controller {
    //    return back()->with('success','Homes\'s image add successfully');
    // }
 
+   // subscribtion
+   public function subscribtionList(){
+      $data['subscribtion'] = Subscribtion::orderBy('id','desc')->get();
+      return view('backend.pages.subscribtion-list', $data);
+   }
 }

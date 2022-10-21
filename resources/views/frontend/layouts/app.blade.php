@@ -10,5 +10,6 @@
         
         @include('frontend.includes.modal')
         @include('frontend.includes.footer')
+        @include('sweetalert::alert')
    </body>
 </html>

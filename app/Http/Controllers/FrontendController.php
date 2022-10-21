@@ -21,6 +21,7 @@ use App\Models\RealEstate;
 // Professional-network
 use App\Models\ProfessionalNetwork;
 use App\Models\ProfessionalNetService;
+use App\Models\Subscribtion;
 
 class FrontendController extends Controller{
    
@@ -58,6 +59,13 @@ class FrontendController extends Controller{
    public function products(){
       $data['ProductCategory'] = ProductCategory::where('status', 1)->orderBy('orderBy')->get();
       return view('frontend.pages.product-page', $data);
+   }
+
+   public function subscribtion(Request $request)
+   {
+      Subscribtion::create($request->all());
+
+      return back()->withSuccess('Your email successfully added to our subscribtion history.');
    }
    
 }

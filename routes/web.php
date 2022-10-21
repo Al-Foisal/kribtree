@@ -91,6 +91,9 @@ Route::middleware(['auth'])->group(function () {
     //Agent
     Route::get('agent/', 'BackendController@agent')->name('agent');
     Route::post('addAgent/', 'BackendController@addAgent')->name('addAgent');
+
+    //subscribtion
+    Route::get('/subscribtion-list','BackendController@subscribtionList')->name('subscribtionList');
 });
 
 //Front page route
@@ -108,6 +111,7 @@ Route::post('/update-cart', 'CartController@updateCart')->name('updateCart');
 Route::get('/remove-from-cart/{rowId}', 'CartController@removeFromCart')->name('removeFromCart');
 Route::get('/destroy-cart', 'CartController@destroyCart')->name('destroyCart');
 
+Route::post('/subscribtion', 'FrontendController@subscribtion')->name('subscribtion');
 // All status change
 Route::get('/status/update', 'HomeController@changeStatus')->name('status');
 Route::get('itemStatus/{id}/{model}/{tab}', 'BackendController@itemStatus')->name('itemStatus');

@@ -69,6 +69,12 @@
                   <p>Agent list</p>
                </a>
             </li>
+            <li class="nav-item as-treeview">
+               <a href="{{ route('subscribtionList') }}" class="nav-link {{ (request()->routeIs('subscribtion*'))  ? 'active' : '' }}">
+                  <i class="nav-icon fas fa-address-book"></i>
+                  <p>Subscribtion list</p>
+               </a>
+            </li>
 
             
             
