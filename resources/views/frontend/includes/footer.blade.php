@@ -93,7 +93,7 @@
             </ul>
         </div>
 
-        <div class="col-3 ">
+        <div class="col-md-3 ">
             <ul>
                 <h4>Contact</h4>
                 @foreach ($Contact as $item)
@@ -102,7 +102,7 @@
             </ul>
         </div>
 
-        <div class="col-3">
+        <div class="col-md-3">
             <ul class="social">
                 <h4>Social</h4>
                 @foreach ($SocialSite as $item)

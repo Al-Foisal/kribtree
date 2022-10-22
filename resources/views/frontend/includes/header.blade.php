@@ -3,10 +3,10 @@
         <a class="navbar-brand p-0 m-0" href="{{ url('/') }}">
             @include('common.logo')
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> --}}
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             @include('frontend.includes.top-menu-title')
