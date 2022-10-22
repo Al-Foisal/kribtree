@@ -11,7 +11,7 @@
    
     @foreach($Home as $item)
         <div class="box">
-            <img src="{{$item->image}}" alt="{{$item->title}}" style="width:100%; height:600px;">
+            <img src="{{$item->image}}" alt="{{$item->title}}" style="width:100%;">
             <div class="text">
                 <h1>{!!$item->title!!}</h1>
                 <a href="{{$item->link}}" class="btn btn-warning">{{$item->buttonName}}</a>
