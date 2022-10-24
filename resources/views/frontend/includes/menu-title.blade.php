@@ -58,6 +58,9 @@
             <li class="list_item">
                 <a href="{{ route('login') }}">Login</a>
             </li>
+            <li class="list_item">
+                <a href="{{ route('register') }}">Registration</a>
+            </li>
 
         </ul>
     </div>
