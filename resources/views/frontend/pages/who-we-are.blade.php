@@ -27,7 +27,7 @@
     
     <div class="centered whoWeAre">
         <h2 class="text-center">Find it. Sell it. Own it.</h2>
-        <div class="input-box-search" style="width: 600px;">
+        <div class="input-box-search" style="width: 100%;">
             <input type="text" class="form-control">
             <i class="fa fa-search"></i>
         </div>

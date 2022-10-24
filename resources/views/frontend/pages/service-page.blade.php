@@ -6,7 +6,7 @@
 
     <div class="row m-4 justify">
         @foreach($Service as $item)
-            <div class="col-4 p-3">
+            <div class="col-md-4 p-3">
                 <div class="card">
                     <h5 class="card-head p-2 text-center" style="height: 50px;">{{$item->title}}</h5>        
                     
@@ -23,7 +23,7 @@
 
     <div class="row m-4">
         @foreach($RealEstate as $item)
-            <div class="col-4 p-3">
+            <div class="col-md-4 p-3">
                 <div class="card">
                     <h5 class="card-head p-2 text-center">{{$item->title}}</h5>        
                     

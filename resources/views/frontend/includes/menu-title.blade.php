@@ -55,6 +55,10 @@
                 <a class="{{ (request()->routeIs(''))  ? 'active' : '' }}"
                     href="#">Find KRIBTREE</a>
             </li>
+            <li class="list_item">
+                <a href="{{ route('login') }}">Login</a>
+            </li>
+
         </ul>
     </div>
 </div>

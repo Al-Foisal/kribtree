@@ -6,7 +6,7 @@
 
     <div class="row m-4">
         @foreach($ProfessionalNetwork as $item)
-            <div class="col-4 p-3">
+            <div class="col-md-4 p-3">
                 <div class="card">
                     <h5 class="card-head p-2 text-center" style="height: 50px;">{{$item->title}}</h5>        
                     
@@ -23,7 +23,7 @@
 
     <div class="row m-4">
         @foreach($ProfessionalNetService as $item)
-            <div class="col-4 p-3">
+            <div class="col-md-4 p-3">
                 <img src="{{$item->image}}" height="500" class="card-img-top" alt="...">
             </div>
             <div class="col-8 p-3">               

@@ -8,7 +8,7 @@
     <div class="row m-4 justify">
         @foreach($Product as $item)
             @if ($loop->iteration < 10)            
-                <div class="col-3 p-3">                
+                <div class="col-md-3 p-3">                
                     <div class="card">  
                         <img src="{{$item->image}}" height="200" class="border round card-img-top thumbnail" alt="...">
                         <div class="card-body">
