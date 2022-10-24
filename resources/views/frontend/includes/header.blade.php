@@ -7,12 +7,44 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> --}}
+        <style>
+            @media only screen and (min-width: 991px) {
+                .vvv {
+                    display: none;
+                }
+            }
+        </style>
+        <ul class="navbar-nav ms-auto ">
+
+            <li class="nav-item vvv">
+                {{-- <div class="input-box-search" style="width: 35rem;">
+                    <input type="text" class="form-control">
+                    <i class="fa fa-search"></i>
+                </div> --}}
+                <style>
+                    .btn:hover {
+                        color: unset;
+                        border: none;
+                        background-color: unset;
+                        border-color: unset;
+                    }
+                </style>
+                <div class="input-group" style="border: 1px solid #ccc;
+                top:0px;">
+                    <input type="text" name="search" required class="form-control" style="border-radius: 0"
+                        placeholder="Search" style="">
+                    <span class="input-group-btn">
+                        <button class="btn btn-theme" type="submit" style="margin: 0"><i
+                                class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </li>
+        </ul>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             @include('frontend.includes.top-menu-title')
 
             <ul class="navbar-nav ms-auto">
-
                 <li class="nav-item">
                     {{-- <div class="input-box-search" style="width: 35rem;">
                         <input type="text" class="form-control">

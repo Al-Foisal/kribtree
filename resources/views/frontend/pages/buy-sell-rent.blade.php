@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-
+@include('frontend.includes.menu-title')
 <h1 class="text-center my-4">Sell house</h1>
 <?php $faker = Faker\Factory::create(); ?>
     

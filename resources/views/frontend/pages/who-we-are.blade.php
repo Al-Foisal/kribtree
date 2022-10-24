@@ -20,7 +20,7 @@
 </style>
 
 @section('content')
-
+@include('frontend.includes.menu-title')
     <div class="box">
         <img src="{{asset('images/who-we-are/who-we-are.jpg')}}" style="width:100%; height:600px;">     
     </div>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class="row justify-content-center whoWeAre2">
+    <div class="row justify-content-around whoWeAre2">
 
         <div class="col-md-3 text-center border border-primary rounded p-4 mx-3">
             <img class="rounded" src="{{asset('images/who-we-are/buy.jpg')}}" style="width:180; height:120px;">           
