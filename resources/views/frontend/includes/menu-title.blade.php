@@ -18,7 +18,6 @@
             <li class="nav-item">
                 <div class="input-box-search" style="width: 100%;">
                     <input type="text" class="form-control">
-                    {{-- <i class="fa fa-search"></i> --}}
                 </div>
                 
             </li>

@@ -3,11 +3,10 @@
         <a class="navbar-brand p-0 m-0" href="{{ url('/') }}">
             @include('common.logo')
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="{{ route('cart') }}" class="navbar-toggler" type="button" >
             <i class="fa-solid fa-cart-shopping" style=";"></i>
             <span class="total_cart_items">{{ Cart::count() }}</span>
-        </button>
+        </a>
         {{-- <style>
             @media only screen and (min-width: 991px) {
                 .vvv {
