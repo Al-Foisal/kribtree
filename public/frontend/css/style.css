@@ -225,7 +225,7 @@ a,
 	/* index-page  */
     .input-box-search { position: relative; margin-top: 3px; }
     .input-box-search i { position: absolute; right: 13px; top: 13px; color: gray; }
-    .input-box-search .form-control { height: 40px; background-color: #eeeeee69; border-color: darkturquoise; }
+    .input-box-search .form-control { height: 40px; background-color: #ffffff; border-color: darkturquoise; }
     .input-box-search .form-control:focus { background-color: whitesmoke; box-shadow: none; border-color: darkturquoise; }
 
 	/* wishList,, user */

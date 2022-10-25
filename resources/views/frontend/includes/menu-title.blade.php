@@ -15,6 +15,13 @@
     <div class="px-3">
         <h4 class="menu_title pt-2 text-white">Menu Title</h4>
         <ul class="list_load">
+            <li class="nav-item">
+                <div class="input-box-search" style="width: 100%;">
+                    <input type="text" class="form-control">
+                    {{-- <i class="fa fa-search"></i> --}}
+                </div>
+                
+            </li>
             <li class="list_item">
                 <a class="{{ (request()->routeIs('products'))  ? 'active' : '' }}"
                     href="{{Route('products')}}">Service product</a>
@@ -33,7 +40,11 @@
             </li>            
             <li class="list_item">
                 <a class="{{ (request()->routeIs('agent-finder'))  ? 'active' : '' }}"
-                    href="{{ Route('agent-finder') }}">Agent finder</a>
+                    href="{{ Route('agent-finder') }}">Professional finder</a>
+            </li>          
+            <li class="list_item">
+                <a class="{{ (request()->routeIs('allVideo'))  ? 'active' : '' }}"
+                    href="{{ Route('allVideo') }}">Kribtree video</a>
             </li>
             <li class="list_item">
                 <a class="{{ (request()->routeIs(''))  ? 'active' : '' }}"

@@ -75,6 +75,12 @@
                   <p>Subscribtion list</p>
                </a>
             </li>
+            <li class="nav-item as-treeview">
+               <a href="{{ route('video') }}" class="nav-link {{ (request()->routeIs('subscribtion*'))  ? 'active' : '' }}">
+                  <i class="nav-icon fas fa-address-book"></i>
+                  <p>Video</p>
+               </a>
+            </li>
 
             
             

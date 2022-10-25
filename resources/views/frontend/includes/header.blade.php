@@ -3,11 +3,12 @@
         <a class="navbar-brand p-0 m-0" href="{{ url('/') }}">
             @include('common.logo')
         </a>
-        {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> --}}
-        <style>
+            <i class="fa-solid fa-cart-shopping" style=";"></i>
+            <span class="total_cart_items">{{ Cart::count() }}</span>
+        </button>
+        {{-- <style>
             @media only screen and (min-width: 991px) {
                 .vvv {
                     display: none;
@@ -17,10 +18,10 @@
         <ul class="navbar-nav ms-auto ">
 
             <li class="nav-item vvv">
-                {{-- <div class="input-box-search" style="width: 35rem;">
+                <div class="input-box-search" style="width: 35rem;">
                     <input type="text" class="form-control">
                     <i class="fa fa-search"></i>
-                </div> --}}
+                </div>
                 <style>
                     .btn:hover {
                         color: unset;
@@ -39,7 +40,7 @@
                     </span>
                 </div>
             </li>
-        </ul>
+        </ul> --}}
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             @include('frontend.includes.top-menu-title')
@@ -57,9 +58,14 @@
                             background-color: unset;
                             border-color: unset;
                         }
+
+                        .display-none {
+                            display: none;
+                        }
                     </style>
-                    <div class="input-group" style="border: 1px solid #ccc;
-                    top:6px;">
+                    <div class="input-group"
+                        style="border: 1px solid #ccc;
+                     {{ request()->routeIs('products') ? 'top:6px;' : 'top:2px;' }}">
                         <input type="text" name="search" required class="form-control" style="border-radius: 0"
                             placeholder="Search" style="">
                         <span class="input-group-btn">
@@ -70,7 +76,8 @@
                 </li>
                 <li class="nav-item">
                     {{-- data-bs-toggle="modal" data-bs-target="#shopping"               --}}
-                    <a href="{{ route('cart') }}" type="button" class="btn btn-sm wishList">
+                    <a href="{{ route('cart') }}" type="button"
+                        class="btn btn-sm wishList {{ request()->routeIs('products') ? '' : 'display-none' }}">
                         <i class="fa-solid fa-cart-shopping" style=";"></i>
                         <span class="total_cart_items">{{ Cart::count() }}</span>
                     </a>

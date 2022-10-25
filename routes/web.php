@@ -40,6 +40,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('editProduct/', 'ProductController@editProduct')->name('editProduct');
     Route::post('editProduct2/', 'ProductController@editProduct2')->name('editProduct2');
 
+    //video
+    Route::get('video/', 'VideoController@index')->name('video');
+    Route::post('add_video/', 'VideoController@store')->name('add_video');
+
+    Route::get('kribtree-video/', 'VideoController@allVideo')->name('allVideo');
+
+
     // Usefull link
     Route::get('useful/', 'FooterController@useful')->name('useful');
     Route::post('addUseful/', 'FooterController@addUseful')->name('addUseful');

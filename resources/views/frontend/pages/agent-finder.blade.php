@@ -8,8 +8,8 @@
     </style>
     <div class="row m-4 justify-content-center">
         <h1 class="text-center">Agent finder</h1>
-        <div class="col-10 p-3">  
-            <table class="table table-success table-striped table-bordered">
+        <div class="col-10 p-3 table-responsive">  
+            <table class="table table-bordered">
                 <thead  class="table-primary text-center">
                     <th>Photo</th>    
                     <th>Name</th>

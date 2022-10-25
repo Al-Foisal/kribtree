@@ -86,7 +86,7 @@
 
         <div class="col-md-3 ">
             <ul>
-                <h4>Thought leadership</h4>
+                <h4>Planning tools</h4>
                 @foreach ($Leadership as $item)
                     <li><a href="{{ $item->url }}" target="_blank"> {{ $item->title }}</a></li>
                 @endforeach
@@ -104,7 +104,7 @@
 
         <div class="col-md-3">
             <ul class="social">
-                <h4>Social</h4>
+                <h4>Public Relations</h4>
                 @foreach ($SocialSite as $item)
                     <li>
                         <a href="{!! $item->socialUrl !!}" target="_blank" title="{!! $item->socialName !!}">

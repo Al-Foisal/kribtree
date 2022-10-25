@@ -26,7 +26,7 @@
             <div class="col-md-4 p-3">
                 <img src="{{$item->image}}" height="500" class="card-img-top" alt="...">
             </div>
-            <div class="col-8 p-3">               
+            <div class="col-md-8 p-3">               
                 <h5 >{!! $item->details !!}</h5>
             </div>
         @endforeach   
