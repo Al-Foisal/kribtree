@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-@include('frontend.includes.menu-title')
+{{-- @include('frontend.includes.menu-title') --}}
     <?php $faker = Faker\Factory::create(); ?>
     <style>
         tr td { vertical-align: middle;}

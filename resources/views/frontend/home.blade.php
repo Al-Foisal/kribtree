@@ -7,7 +7,7 @@
     </video>
     <h1 class="centered">KRIBTREE</h1>
     
-    @include('frontend.includes.menu-title')
+    {{-- @include('frontend.includes.menu-title') --}}
    
     @foreach($Home as $item)
         <div class="box">

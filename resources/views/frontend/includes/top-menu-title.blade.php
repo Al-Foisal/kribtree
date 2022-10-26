@@ -1,4 +1,4 @@
-<style>
+{{-- <style>
     .dynamic li a {font-size: 16px;}
     .dynamic li .active{ color: #000; font-weight: bold; }
     .dynamic .nav-item a:hover{ color: rgb(0, 106, 255); }
@@ -61,4 +61,4 @@
             </ul>
         </li>
     </ul>
-@endif
+@endif --}}

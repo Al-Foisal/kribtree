@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-@include('frontend.includes.menu-title')
+{{-- @include('frontend.includes.menu-title') --}}
     <h1 class="text-center my-4">Professional Network</h1>
 
     <div class="row m-4">

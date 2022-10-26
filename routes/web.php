@@ -15,7 +15,7 @@ Route::get('/clear', function () {
 Route::get('/', 'FrontendController@index')->name('index');
 
 // Backend
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth','admin_type'])->group(function () {
 
     Route::get('/admin', 'HomeController@admin')->name('admin');
     // left
@@ -45,7 +45,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('add_video/', 'VideoController@store')->name('add_video');
 
     Route::get('kribtree-video/', 'VideoController@allVideo')->name('allVideo');
-
 
     // Usefull link
     Route::get('useful/', 'FooterController@useful')->name('useful');
@@ -100,9 +99,14 @@ Route::middleware(['auth'])->group(function () {
     Route::post('addAgent/', 'BackendController@addAgent')->name('addAgent');
 
     //subscribtion
-    Route::get('/subscribtion-list','BackendController@subscribtionList')->name('subscribtionList');
+    Route::get('/subscribtion-list', 'BackendController@subscribtionList')->name('subscribtionList');
 });
 
+Route::middleware(['auth','user_type'])->prefix('/user')->as('user.')->group(function () {
+    Route::get('/dashboard', 'UserDashboardController@dashboard')->name('dashboard');
+    Route::get('/profile', 'UserDashboardController@profile')->name('profile');
+    Route::post('/update-profile', 'UserDashboardController@updateProfile')->name('updateProfile');
+});
 //Front page route
 Route::get('who-we-are/', 'FrontendController@who_we_are')->name('who-we-are');
 Route::get('service-page/', 'FrontendController@service_page')->name('service-page');

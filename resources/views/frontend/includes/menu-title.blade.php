@@ -65,12 +65,18 @@
                 <a class="{{ (request()->routeIs(''))  ? 'active' : '' }}"
                     href="#">Find KRIBTREE</a>
             </li>
+            @auth
+            <li class="list_item">
+                <a href="{{ route('user.dashboard') }}">DashBoard</a>
+            </li>
+            @else
             <li class="list_item">
                 <a href="{{ route('login') }}">Login</a>
             </li>
             <li class="list_item">
                 <a href="{{ route('register') }}">Registration</a>
             </li>
+            @endauth
 
         </ul>
     </div>

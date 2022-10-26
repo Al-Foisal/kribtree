@@ -195,7 +195,7 @@
         }
     </style>
     <h1 class="text-center my-4">Shopping Cart</h1>
-    @include('frontend.includes.menu-title')
+    {{-- @include('frontend.includes.menu-title') --}}
     <div class="cart_section">
         <div class="container-fluid">
             <div class="row">
