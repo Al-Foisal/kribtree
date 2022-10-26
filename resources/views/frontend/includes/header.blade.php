@@ -134,7 +134,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->routeIs('allVideo'))  ? 'active' : '' }}"
-                        href="{{ Route('allVideo') }}">Kribtree video</a>
+                        href="{{ Route('user.allVideo') }}">Kribtree video</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
