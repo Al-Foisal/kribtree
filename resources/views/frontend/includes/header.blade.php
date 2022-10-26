@@ -132,6 +132,10 @@
                     <a class="nav-link {{ request()->routeIs('agent-finder') ? 'active' : '' }}"
                         href="{{ Route('agent-finder') }}">Professional finder</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (request()->routeIs('allVideo'))  ? 'active' : '' }}"
+                        href="{{ Route('allVideo') }}">Kribtree video</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
                     <ul class="dropdown-menu">
@@ -178,11 +182,11 @@
             </a> --}}
 
             @auth
-                <a class="link-secondary me-3" href="{{ route('user.dashboard') }}">
+                <a class="link-secondary" href="{{ route('user.dashboard') }}">
                     Dashboard
                 </a>
             @else
-                <a class="link-secondary me-3" href="{{ route('login') }}">
+                <a class="link-secondary" href="{{ route('login') }}">
                     Login
                 </a>
             @endauth
