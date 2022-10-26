@@ -114,7 +114,7 @@ Route::get('service-page/', 'FrontendController@service_page')->name('service-pa
 Route::get('professional-network-page/', 'FrontendController@professional_network')->name('professional-network-page');
 Route::get('products/', 'FrontendController@products')->name('products');
 Route::get('buy', 'ProductController@buy')->name('buy');
-Route::get('agent-finder', 'ProductController@agent_finder')->name('agent-finder');
+Route::get('professional-finder', 'ProductController@agent_finder')->name('agent-finder');
 
 //cart
 Route::get('/cart', 'CartController@cart')->name('cart');
