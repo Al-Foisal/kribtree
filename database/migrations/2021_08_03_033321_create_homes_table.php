@@ -18,7 +18,8 @@ class CreateHomesTable extends Migration
             $table->text('image');
             $table->text('title');
             $table->text('buttonName');
-            $table->text('link');
+            $table->text('link')->nullable();
+            $table->longText('details')->nullable();
             $table->integer('orderBy');
             $table->tinyInteger('status')->default('1');
             $table->timestamps();

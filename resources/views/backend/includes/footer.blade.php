@@ -51,6 +51,8 @@
 
       $(document).ready(function(){
         $('.summernote').summernote();
+        $('.summernoted').summernote();
+        $('.summernoteed').summernote();
       });    
       
       //redirect to specific tab

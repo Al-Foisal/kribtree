@@ -27,8 +27,9 @@ Route::middleware(['auth','admin_type'])->group(function () {
 
     // home
     Route::get('home/', 'BackendController@home')->name('home');
+    Route::get('createHome/', 'BackendController@createHome')->name('createHome');
     Route::post('addHome/', 'BackendController@addHome')->name('addHome');
-    Route::get('editHome/', 'BackendController@editHome')->name('editHome');
+    Route::get('editHome/{id}', 'BackendController@editHome')->name('editHome');
     Route::post('editHome2/', 'BackendController@editHome2')->name('editHome2');
 
     // Product
@@ -109,6 +110,7 @@ Route::middleware(['auth','user_type'])->prefix('/user')->as('user.')->group(fun
     Route::get('kribtree-video/', 'VideoController@allVideo')->name('allVideo');
 });
 //Front page route
+Route::get('/home-details/{slug}','FrontendController@homeDetails')->name('homeDetails');
 Route::get('who-we-are/', 'FrontendController@who_we_are')->name('who-we-are');
 Route::get('service-page/', 'FrontendController@service_page')->name('service-page');
 Route::get('professional-network-page/', 'FrontendController@professional_network')->name('professional-network-page');

@@ -1,6 +1,6 @@
    
 @if(isset($Home))
-   <form action="{{ url('editHome2') }}" method="post" enctype="multipart/form-data" class="needs-validation" >
+   <form action="{{ url('editHome2') }}" method="post" enctype="multipart/form-data">
       @csrf                   
       <div class="form">
          <div class="form-group row">
@@ -18,7 +18,7 @@
 
          <div class="form-group">
             <label for="title">Title :</label>
-            <textarea type="text" class="form-control summernote" id="title" name="title" required>{{$Home->title}}</textarea>
+            <textarea type="text" class="form-control" id="title" name="title" required>{{$Home->title}}</textarea>
          </div>
 
          <div class="form-group">
@@ -28,6 +28,10 @@
          <div class="form-group">
             <label for="link">Button link :</label>
             <input name="link" class="form-control" id="link" type="text" value="{{$Home->link}}" placeholder="https://www.name.com" required>
+         </div>
+         <div class="form-group">
+            <label for="details">Details :</label>
+            <textarea type="text" class="form-control summernote" id="details" name="details" required>{!! $Home->details !!}</textarea>
          </div>
       </div>
       <div class="modal-footer">

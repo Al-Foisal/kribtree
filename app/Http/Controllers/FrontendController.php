@@ -32,6 +32,13 @@ class FrontendController extends Controller{
       return view('frontend.home', $data);
    }
 
+   public function homeDetails($slug)
+   {
+      $data['info'] = Home::where('slug',$slug)->first();
+
+      return view('frontend.pages.home-details', $data);
+   }
+
    // who_we_are page
    public function who_we_are(){
       $data['info'] = 'This is who we are page';
